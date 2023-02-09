@@ -1,0 +1,35 @@
+﻿<Page x:Class="SalonKrasoti.MainPages.PageMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SalonKrasoti.MainPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Авторизация">
+
+    <Grid Background="#ff4a6d">
+        <StackPanel Width="200">
+            <Image Source="../Image/beauty_logo.png"
+                   Margin="5 5 5 5"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Margin="0 25 5 5">
+            
+            <Button
+                Width="140"
+                Height="25"
+                Margin="0 0 0 5"
+                Content="Режим работника"
+                Name="GoDefault"
+                Click="GoDefault_Click"/>
+            <Button
+                Width="140"
+                Height="25"
+                Content="Режим администратора"
+                Name="GoAdmin"
+                Click="GoAdmin_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
